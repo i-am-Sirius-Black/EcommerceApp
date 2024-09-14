@@ -4,11 +4,26 @@
 This project is a simple e-commerce application built as part of the Backend Developer Intern assignment. It provides REST APIs for user authentication and product management, with separate functionalities for buyers and sellers. The application is developed using **Node.js** and **Express.js**, with **PostgreSQL** as the database.
 
 ## Screenshots:
+
+### Home
 <img width="1440" alt="Screenshot 2024-09-14 at 7 43 56 PM" src="https://github.com/user-attachments/assets/85b2e230-7517-4a7d-b996-b51bc990c886">
+
+### Products
 <img width="1440" alt="Screenshot 2024-09-14 at 7 44 03 PM" src="https://github.com/user-attachments/assets/231949dd-b27d-4306-9da1-27f6c46341ab">
+
+
+### Add Products
 <img width="1440" alt="Screenshot 2024-09-14 at 7 46 07 PM" src="https://github.com/user-attachments/assets/55e57778-3781-4741-9e7d-562793df9804">
+
+
+### Signup
 <img width="1440" alt="Screenshot 2024-09-14 at 7 46 17 PM" src="https://github.com/user-attachments/assets/0cae74c3-6913-465e-9a13-18e133093d39">
+
+### Login
 <img width="1440" alt="Screenshot 2024-09-14 at 7 46 36 PM" src="https://github.com/user-attachments/assets/2e06ceb0-3496-45a7-bad0-d35c83504e22">
+
+
+### Cart
 <img width="1440" alt="Screenshot 2024-09-14 at 7 46 42 PM" src="https://github.com/user-attachments/assets/cdb71b71-8e29-4430-8e2f-09dff3f21c36">
 
 
