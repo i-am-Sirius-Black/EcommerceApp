@@ -47,10 +47,6 @@ ducts
 - **PostgreSQL** - Database
 - **Libraries**: JWT for authentication, bcrypt for password hashing, and Sequelize for ORM
 
-## Deployed Links
-- **Backend Deployed on AWS**: [AWS Backend Link]
-- **Live Frontend Application**: [Live Frontend Link] (if applicable)
-
 ## API Endpoints
 
 ### 1. User Signup
