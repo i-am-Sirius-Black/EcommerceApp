@@ -5,26 +5,34 @@ This project is a simple e-commerce application built as part of the Backend Dev
 
 ## Screenshots:
 
-### Home
-<img width="1440" alt="Screenshot 2024-09-14 at 7 43 56 PM" src="https://github.com/user-attachments/assets/85b2e230-7517-4a7d-b996-b51bc990c886">
-
-### Products
-<img width="1440" alt="Screenshot 2024-09-14 at 7 44 03 PM" src="https://github.com/user-attachments/assets/231949dd-b27d-4306-9da1-27f6c46341ab">
-
-
-### Add Products
-<img width="1440" alt="Screenshot 2024-09-14 at 7 46 07 PM" src="https://github.com/user-attachments/assets/55e57778-3781-4741-9e7d-562793df9804">
-
-
 ### Signup
-<img width="1440" alt="Screenshot 2024-09-14 at 7 46 17 PM" src="https://github.com/user-attachments/assets/0cae74c3-6913-465e-9a13-18e133093d39">
+<img width="1440" alt="Screenshot 2024-09-14 at 7 46 36 PM" src="https://github.com/user-attachments/assets/acce2aec-7393-41d3-9b4a-1923afade78b">
+
+
 
 ### Login
-<img width="1440" alt="Screenshot 2024-09-14 at 7 46 36 PM" src="https://github.com/user-attachments/assets/2e06ceb0-3496-45a7-bad0-d35c83504e22">
+<img width="1440" alt="Screenshot 2024-09-14 at 7 46 42 PM" src="https://github.com/user-attachments/assets/705b0805-d731-4b05-a4d6-2278fce57714">
+
+
+### Home
+<img width="1440" alt="Screenshot 2024-09-14 at 7 43 56 PM" src="https://github.com/user-attachments/assets/47bdb97a-92a3-47fd-a776-f5b3a252a63c">
+
+
+
+### Products
+<img width="1440" alt="Screenshot 2024-09-14 at 7 44 03 PM" src="https://github.com/user-attachments/assets/320b5435-39d7-468c-a3a5-364c53aec075">
+
+
+
+### Add Pro
+<img width="1440" alt="Screenshot 2024-09-14 at 7 46 07 PM" src="https://github.com/user-attachments/assets/1eac62a4-ea14-4551-a305-9e8d94fca920">
+ducts
+
 
 
 ### Cart
-<img width="1440" alt="Screenshot 2024-09-14 at 7 46 42 PM" src="https://github.com/user-attachments/assets/cdb71b71-8e29-4430-8e2f-09dff3f21c36">
+<img width="1440" alt="Screenshot 2024-09-14 at 7 46 17 PM" src="https://github.com/user-attachments/assets/2d42f21f-618b-457a-9b59-7860fd687a5f">
+
 
 
 ## Features
