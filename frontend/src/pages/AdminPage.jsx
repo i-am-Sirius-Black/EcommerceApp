@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import {jwtDecode} from 'jwt-decode';
 
-const AdminPage = () => {
+const AdminPage = ({apiUrl}) => {
   const [userRole, setUserRole] = useState(null);
   const [products, setProducts] = useState([]);
   const [formData, setFormData] = useState({
@@ -39,7 +39,7 @@ const AdminPage = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get('http://localhost:3000/api/products/search');
+      const response = await axios.get(`${apiUrl}/api/products/search`);
       setProducts(response.data);
     } catch (error) {
       setError('Failed to fetch products');
@@ -54,7 +54,7 @@ const AdminPage = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        'http://localhost:3000/api/products',
+        `${apiUrl}/api/products`,
         { ...formData, seller_id: 2 }, 
         {
           headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
@@ -71,7 +71,7 @@ const AdminPage = () => {
     e.preventDefault();
     try {
       const response = await axios.put(
-        `http://localhost:3000/api/products/${selectedProductId}`,
+        `${apiUrl}/api/products/${selectedProductId}`,
         formData,
         {
           headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
@@ -90,7 +90,7 @@ const AdminPage = () => {
 
   const handleDeleteProduct = async (productId) => {
     try {
-      await axios.delete(`http://localhost:3000/api/products/${productId}`, {
+      await axios.delete(`${apiUrl}/api/products/${productId}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       setProducts(products.filter((product) => product.id !== productId));

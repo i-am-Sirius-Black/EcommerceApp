@@ -1,10 +1,10 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
 
-const ProductsPage = () => {
+const ProductsPage = ({apiUrl}) => {
   return (
     <>
-      <ProductList />
+      <ProductList apiUrl={apiUrl}/>
     </>
   );
 };

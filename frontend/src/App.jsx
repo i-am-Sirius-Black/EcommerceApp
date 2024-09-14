@@ -8,11 +8,13 @@ import Navbar from "./components/Navbar";
 import Signup from "./components/Signup";
 import AdminPage from "./pages/AdminPage";
 import {jwtDecode} from "jwt-decode";
+const apiUrl = import.meta.env.VITE_API_URL;
 
 function App() {
   const [userRole, setUserRole] = useState(null);
   const [userName, setUserName] = useState(null);
   const [token, setToken] = useState(localStorage.getItem("token") || "");
+
 
   useEffect(() => {
     if (!token) {
@@ -24,8 +26,10 @@ function App() {
       const decodedToken = jwtDecode(token); 
       setUserRole(decodedToken.role);
       const fullEmail = decodedToken.email;
-      const username = fullEmail.split('@')[0];
-      setUserName(username);
+      const userName = fullEmail.split('@')[0];
+      setUserName(userName);
+      console.log(userName);
+      
     } catch (error) {
       console.error("Error decoding token:", error);
     }
@@ -37,11 +41,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage userName={userName}/>} />
-        <Route path="/login" element={<LoginPage />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/products" element={<ProductsPage />} />
-        <Route path="/cart" element={<CartPage />} />
-        <Route path="/admin" element={<AdminPage />} />
+        <Route path="/login" element={<LoginPage apiUrl={apiUrl}/>} />
+        <Route path="/signup" element={<Signup apiUrl={apiUrl}/>} />
+        <Route path="/products" element={<ProductsPage apiUrl={apiUrl}/>} />
+        <Route path="/cart" element={<CartPage apiUrl={apiUrl}/>} />
+        <Route path="/admin" element={<AdminPage apiUrl={apiUrl}/>} />
         
         {/* Protected Route for Admin Page (Sellers Only) */}
         {/* <Route

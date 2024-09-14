@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+import {  AiOutlineMinus } from "react-icons/ai";
 
 
 const Cart = ({ cartItems, handleRemoveCart }) => {

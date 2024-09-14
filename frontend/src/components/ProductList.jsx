@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const ProductList = () => {
+const ProductList = ({apiUrl}) => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -12,7 +12,7 @@ const ProductList = () => {
     const fetchProducts = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/api/products/search"
+          `${apiUrl}/api/products/search`
         );
         setProducts(response.data);
         setLoading(false);
@@ -35,7 +35,7 @@ const ProductList = () => {
   
     try {
       const response = await axios.post(
-        'http://localhost:3000/api/cart',
+        `${apiUrl}/api/cart`,
         { productId: id },
         {
           headers: {

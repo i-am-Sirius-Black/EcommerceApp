@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
+const Signup = ({apiUrl}) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [role, setRole] = useState("buyer"); // Default role is user
@@ -14,12 +14,12 @@ const Signup = () => {
     
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/auth/signup",
+        `${apiUrl}/api/auth/signup`,
         { email, password, role }
       );
       alert("Signup successful!");
       localStorage.setItem("token", response.data.token);
-      navigate('/')
+      navigate('/');
     } catch (error) {
       console.error(error);
       alert("Signup failed!");
