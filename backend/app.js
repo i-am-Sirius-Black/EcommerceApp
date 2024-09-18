@@ -5,7 +5,7 @@ import sequelize from './config/database.js';
 import authRoutes from './routes/authRoutes.js';
 import productRoutes from './routes/productRoutes.js';
 import cartRoutes from './routes/cartRoutes.js';
-import { errorHandler, notFoundHandler } from './middlewares/errorMiddleware.js';
+import { notFoundHandler } from './middlewares/errorMiddleware.js';
 
 const app = express();
 
