@@ -34,30 +34,25 @@ function App() {
       console.error("Error decoding token:", error);
     }
   }, [token]); 
+
+    // Function to update token state after login
+    const handleSetToken = (newToken) => {
+      setToken(newToken);
+      localStorage.setItem("token", newToken);
+    };
   
 
   return (
     <Router>
-      <Navbar />
+      <Navbar/>
       <Routes>
         <Route path="/" element={<HomePage userName={userName}/>} />
-        <Route path="/login" element={<LoginPage apiUrl={apiUrl}/>} />
+        <Route path="/login" element={<LoginPage apiUrl={apiUrl} setToken={handleSetToken}/>} />
         <Route path="/signup" element={<Signup apiUrl={apiUrl}/>} />
         <Route path="/products" element={<ProductsPage apiUrl={apiUrl}/>} />
         <Route path="/cart" element={<CartPage apiUrl={apiUrl}/>} />
         <Route path="/admin" element={<AdminPage apiUrl={apiUrl}/>} />
-        
-        {/* Protected Route for Admin Page (Sellers Only) */}
-        {/* <Route
-          path="/admin"
-          element={
-            token && userRole === "seller" ? (
-              <AdminPage />
-            ) : (
-              <Navigate to="/" /> // Redirect non-sellers to home
-            )
-          }
-        /> */}
+      
       </Routes>
     </Router>
   );

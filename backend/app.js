@@ -28,9 +28,6 @@ app.use('/api', cartRoutes);             // Buyer cart routes
 // 404 Not Found Middleware
 app.use(notFoundHandler);
 
-// Global Error Handler Middleware
-app.use(errorHandler);
-
 // Start the server
 const PORT = process.env.PORT ;
 app.listen(PORT, () => {
